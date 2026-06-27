@@ -52,6 +52,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -71,6 +72,7 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--accent);
+}
 }
 
 .artist-name {

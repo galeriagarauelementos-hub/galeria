@@ -55,17 +55,17 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .logo-symbol {
-    font-size: 1.9rem;        /* tamanho ajustado */
+    font-size: 1.65rem;   /* menor */
     color: var(--accent);
     line-height: 1;
 }
 
 .logo-text {
-    font-size: 1.28rem;       /* tamanho ajustado */
+    font-size: 1.15rem;   /* menor */
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--accent);

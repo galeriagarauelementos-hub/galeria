@@ -3,12 +3,12 @@ const obras = [
     {
         id: 1,
         titulo: "Twilight Sentinel",
-        imagem: "https://i.imgur.com/ci7dXQj.jpg",
+        imagem: "https://i.imgur.com/N4st6S2.jpg",   // ← Link corrigido
         dimensoes: "133 × 88 × 8 cm",
         tecnica: "Madeira recuperada entalhada, pintura e moldura rústica",
         ano: "2025",
         descricao: "Uma celebração da quietude ao entardecer. Esculpida em madeira nobremente recuperada, esta peça transforma o que a natureza já havia marcado em uma obra de profunda serenidade e presença.",
-        preco: "R$ 330",
+        preco: "R$ 1.250",
         status: "disponivel"
     },
     {

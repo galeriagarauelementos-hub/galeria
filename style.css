@@ -59,7 +59,15 @@ body {
 }
 
 .logo-symbol {
-    font-size: 2rem;
+    font-size: 2.2rem;        /* reduzido */
+    color: var(--accent);
+    line-height: 1;
+}
+
+.logo-text {
+    font-size: 1.35rem;       /* reduzido */
+    font-weight: 700;
+    letter-spacing: 2px;
     color: var(--accent);
 }
 

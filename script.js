@@ -7,7 +7,7 @@ const obras = [
     { id: 6, titulo: "Portas para o Céu", imagem: "https://i.imgur.com/vsWQIGh.jpg", dimensoes: "59 × 33 × 3.5 cm", tecnica: "Madeira recuperada", ano: "2026", descricao: "Portas para o infinito.", preco: "R$ 1.750", status: "disponivel" },
     { id: 7, titulo: "Fruto de Canes", imagem: "https://i.imgur.com/MUMEQZL.jpg", dimensoes: "66 × 39 × 4 cm", tecnica: "Madeira recuperada", ano: "2026", descricao: "Peça vendida.", preco: "R$ 0", status: "vendida" },
     { id: 8, titulo: "Pirarara", imagem: "https://i.imgur.com/CQUa762.jpg", dimensoes: "41 × 109 × 4.5 cm", tecnica: "Madeira recuperada", ano: "2026", descricao: "Peça vendida.", preco: "R$ 0", status: "vendida" },
-    { id: 9, titulo: "Mamede Leão", imagem: "https://i.imgur.com/PxcznOa.jpg", dimensoes: "76 × 53 × 4 cm", tecnica: "Madeira recuperada", ano: "2026", descricao: "Peça vendida.", preco: "R$ 0", status: "vendida" }
+    { id: 10, titulo: "Mamede Leão", imagem: "https://i.imgur.com/PxcznOa.jpg", dimensoes: "76 × 53 × 4 cm", tecnica: "Madeira recuperada", ano: "2026", descricao: "Peça vendida.", preco: "R$ 0", status: "vendida" }
 ];
 
 let currentFilter = 'todos';

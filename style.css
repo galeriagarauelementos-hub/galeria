@@ -52,27 +52,17 @@ body {
     flex-wrap: wrap;
 }
 
-/* LOGO */
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-}
-
-.logo-image {
-    height: 55px;
-    width: auto;
-    border-radius: 50%;
-    object-fit: contain;
-    border: 2px solid var(--accent);
-}
-
-.logo-text {
-    font-size: 1.45rem;
-    font-weight: 700;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     letter-spacing: 2px;
-    color: var(--accent);
 }
+
+.logo-symbol {
+    color: var(--accent);
 }
 
 .artist-name {
@@ -291,23 +281,23 @@ body {
 }
 
 .btn-secondary {
-    background: #9c7c5e;
+    background: var(--accent);
     color: white;
     border: none;
-    padding: 1.2rem 3.8rem;
+    padding: 1.2rem 3.5rem;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: 700;
-    box-shadow: 0 10px 25px rgba(156, 124, 94, 0.4);
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(156, 124, 94, 0.4);
     transition: all 0.3s ease;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .btn-secondary:hover {
     background: #8a6a4f;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(156, 124, 94, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(156, 124, 94, 0.5);
 }
 
 /* LIGHTBOX */

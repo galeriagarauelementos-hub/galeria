@@ -59,20 +59,13 @@ body {
 }
 
 .logo-symbol {
-    font-size: 2.2rem;        /* reduzido */
+    font-size: 1.9rem;        /* tamanho ajustado */
     color: var(--accent);
     line-height: 1;
 }
 
 .logo-text {
-    font-size: 1.35rem;       /* reduzido */
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: var(--accent);
-}
-
-.logo-text {
-    font-size: 1.45rem;
+    font-size: 1.28rem;       /* tamanho ajustado */
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--accent);
@@ -497,5 +490,13 @@ body {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+    
+    .logo-symbol {
+        font-size: 1.7rem;
+    }
+    
+    .logo-text {
+        font-size: 1.15rem;
     }
 }

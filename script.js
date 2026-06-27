@@ -2,91 +2,120 @@
 const obras = [
     {
         id: 1,
-        titulo: "Memória da Floresta",
-        imagem: "https://picsum.photos/id/1015/800/800",
-        dimensoes: "120 × 160 cm",
-        tecnica: "Óleo sobre tela",
+        titulo: "Twilight Sentinel",
+        imagem: "https://i.imgur.com/ci7dXQj.jpg",   // Foto principal (a mais bonita)
+        dimensoes: "133 × 88 × 8 cm",
+        tecnica: "Madeira entalhada, pintura e moldura rústica",
         ano: "2025",
-        descricao: "Uma exploração das camadas de memória que a mata guarda. Tons terrosos e verdes profundos dialogam com a luz que atravessa a copa.",
-        preco: "R$ 18.500",
+        descricao: "Twilight Sentinel captura a poesia silenciosa do campo ao entardecer. Um pássaro solitário repousa sobre uma cerca desgastada, silhuetado contra um céu em chamas de ouro, âmbar e carmim. Emoldurado por árvores escuras, evoca paz, solidão e conexão com a natureza.",
+        preco: "R$ 330",
         status: "disponivel"
     },
     {
+            {
         id: 2,
-        titulo: "Horizonte Quebrado",
-        imagem: "https://picsum.photos/id/133/800/800",
-        dimensoes: "100 × 140 cm",
-        tecnica: "Acrílico e pigmentos",
-        ano: "2024",
-        descricao: "A linha do horizonte se fragmenta em camadas de cor, representando as múltiplas realidades que coexistem em nosso tempo.",
-        preco: "R$ 14.200",
-        status: "vendida"
+        titulo: "Campo Carmim",
+        imagem: "https://i.imgur.com/2sAFKEH.jpg",
+        dimensoes: "52.5 × 35 × 3 cm",
+        tecnica: "Madeira entalhada, pintura acrílica texturizada e moldura rústica",
+        ano: "2026",
+        descricao: "Campo Carmim captura um momento de quieta reflexão onde natureza e emoção se encontram. Contra um céu cinza suave, uma árvore solitária estende seus galhos escuros em direção a uma lua carmim luminosa, enquanto delicadas flores emergem como símbolos de resiliência, esperança e renovação.",
+        preco: "R$ 330",
+        status: "disponivel"
+    },
     },
     {
+            {
         id: 3,
-        titulo: "Sombra da Manhã",
-        imagem: "https://picsum.photos/id/201/800/800",
-        dimensoes: "80 × 120 cm",
-        tecnica: "Óleo sobre linho",
-        ano: "2025",
-        descricao: "O momento silencioso em que a luz toca o rosto da cidade. Uma meditação sobre o tempo e a passagem.",
-        preco: "R$ 9.800",
+        titulo: "Robalo Brasil",
+        imagem: "https://i.imgur.com/9KJ6AMw.jpg",
+        dimensoes: "34.5 × 66.5 × 2 cm",
+        tecnica: "Madeira reutilizada entalhada, pintura e moldura rústica",
+        ano: "2026",
+        descricao: "Obra criada exclusivamente com madeira reutilizada, selecionada com cuidado de materiais previamente usados. Cada peça carrega sua própria história e caráter, transformada através do trabalho manual em uma obra única que celebra a sustentabilidade e o valor artístico atemporal.",
+        preco: "R$ 520",
         status: "disponivel"
     },
+    },
     {
+            {
         id: 4,
-        titulo: "Raízes Invisíveis",
-        imagem: "https://picsum.photos/id/251/800/800",
-        dimensoes: "150 × 110 cm",
-        tecnica: "Mista sobre madeira",
-        ano: "2023",
-        descricao: "O que nos sustenta quando tudo parece flutuar? Uma reflexão sobre ancestralidade e pertencimento.",
-        preco: "R$ 22.000",
+        titulo: "Pirarucu Native River",
+        imagem: "https://i.imgur.com/j8bYzjg.jpg",
+        dimensoes: "33 × 59.5 × 1.5 cm",
+        tecnica: "Madeira reutilizada entalhada, pintura e moldura rústica",
+        ano: "2026",
+        descricao: "Obra criada exclusivamente com madeira reutilizada. Cada peça carrega sua própria história e caráter, transformada através do trabalho manual em uma arte única que celebra sustentabilidade e valor artístico atemporal.",
+        preco: "R$ 550",
         status: "disponivel"
     },
+    },
     {
+            {
         id: 5,
-        titulo: "Luz Dourada",
-        imagem: "https://picsum.photos/id/1016/800/800",
-        dimensoes: "90 × 130 cm",
-        tecnica: "Óleo sobre tela",
-        ano: "2024",
-        descricao: "",
-        preco: "R$ 12.900",
-        status: "vendida"
+        titulo: "Guardiã do Silêncio",
+        imagem: "https://i.imgur.com/Nqv9ybj.jpg",
+        dimensoes: "56 × 30 × 3 cm",
+        tecnica: "Madeira reutilizada entalhada, pintura e moldura rústica",
+        ano: "2026",
+        descricao: "Trabalho com materiais rústicos e reutilizados, principalmente madeira reciclada. Cada peça é inteiramente feita à mão, com ferramentas simples e técnicas tradicionais. Busco preservar a essência bruta, as texturas e a história presente em cada pedaço de madeira recuperada.",
+        preco: "R$ 600",
+        status: "disponivel"
+    },
     },
     {
+            {
         id: 6,
-        titulo: "Eco do Silêncio",
-        imagem: "https://picsum.photos/id/870/800/800",
-        dimensoes: "110 × 150 cm",
-        tecnica: "Acrílico e folha de ouro",
-        ano: "2025",
-        descricao: "O vazio não é ausência. É presença plena. Uma das peças mais contemplativas da série.",
-        preco: "R$ 16.700",
+        titulo: "Portas para o Céu",
+        imagem: "https://i.imgur.com/vsWQIGh.jpg",
+        dimensoes: "59 × 33 × 3.5 cm",
+        tecnica: "Madeira reutilizada entalhada, pintura e moldura rústica",
+        ano: "2026",
+        descricao: "Trabalho com materiais rústicos e reutilizados, principalmente madeira reciclada. Cada peça é feita à mão com ferramentas simples e técnicas tradicionais. Busco preservar a essência bruta, as texturas e a história de cada pedaço de madeira recuperada.",
+        preco: "R$ 400",
         status: "disponivel"
     },
+    },
     {
+            {
         id: 7,
-        titulo: "Porta para o Mar",
-        imagem: "https://picsum.photos/id/133/800/800",
-        dimensoes: "70 × 100 cm",
-        tecnica: "Óleo sobre tela",
-        ano: "2024",
-        descricao: "",
-        preco: "R$ 8.400",
+        titulo: "Fruto de Canes",
+        imagem: "https://i.imgur.com/MUMEQZL.jpg",
+        dimensoes: "?? × ?? cm",
+        tecnica: "Madeira reutilizada entalhada e pintura",
+        ano: "2026",
+        descricao: "Peça única criada com madeira recuperada, transformada manualmente em uma composição que celebra a força bruta e a poesia silenciosa da matéria. Cada detalhe preserva a história do material original, resultando em uma obra cheia de textura, profundidade e autenticidade.",
+        preco: "-----",
         status: "vendida"
     },
+    },
     {
-        id: 8,
-        titulo: "Vestígios",
-        imagem: "https://picsum.photos/id/201/800/800",
-        dimensoes: "130 × 90 cm",
-        tecnica: "Mista",
-        ano: "2025",
-        descricao: "Marcas do tempo sobre a superfície da memória.",
-        preco: "R$ 15.300",
-        status: "disponivel"
+            {
+            {
+        id: 16,
+        titulo: "Pirarara",
+        imagem: "https://i.imgur.com/CQUa762.jpg",
+        dimensoes: "?? × ?? cm",
+        tecnica: "Madeira reutilizada entalhada e pintura",
+        ano: "2026",
+        descricao: "Peça única esculpida em madeira recuperada, com forte presença e textura marcante. Uma obra que transmite força, rusticidade e a beleza encontrada no material reutilizado.",
+        preco: "-----",
+        status: "vendida"
+    },
+    },
+    {
+            {
+        id: 17,
+        titulo: "Mamede Leão",
+        imagem: "https://i.imgur.com/PxcznOa.jpg",
+        dimensoes: "?? × ?? cm",
+        tecnica: "Madeira entalhada, pintura e textura acrílica",
+        ano: "2026",
+        descricao: "Peça única que une entalhe manual, pintura e textura acrílica sobre madeira recuperada. Uma composição forte e expressiva que destaca a potência da matéria bruta transformada pela mão do artista.",
+        preco: "-----",
+        status: "vendida"
+    },
+    },
     }
 ];
 
@@ -193,7 +222,7 @@ lightbox.addEventListener('click', (e) => {
 
 // WhatsApp button
 document.getElementById('lightbox-whatsapp').addEventListener('click', () => {
-    const numero = '+5564993113063'; // Configure aqui
+    const numero = '64993113063'; // Configure aqui
     const mensagem = encodeURIComponent("Olá! Tenho interesse na obra que vi no site.");
     window.open(`https://wa.me/${numero}?text=${mensagem}`, '_blank');
 });

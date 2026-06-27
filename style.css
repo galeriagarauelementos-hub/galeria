@@ -1,4 +1,4 @@
-/* style.css */
+/* style.css - VERSÃO CORRIGIDA */
 :root {
     --bg: #f8f7f4;
     --text: #1a1a1a;
@@ -15,11 +15,7 @@
     --border: #3a3a3a;
 }
 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Georgia', serif;
@@ -29,13 +25,9 @@ body {
     transition: background 0.4s, color 0.4s;
 }
 
-.container { 
-    max-width: 1280px; 
-    margin: 0 auto; 
-    padding: 0 2rem; 
-}
+.container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
 
-/* ====================== HEADER & LOGO PNG ====================== */
+/* HEADER + LOGO (70% do tamanho) */
 .header {
     position: sticky;
     top: 0;
@@ -62,57 +54,31 @@ body {
 }
 
 .logo-img {
-    height: 58px;           /* Tamanho da logo - altere aqui */
+    height: 40px;           /* ← 70% do tamanho anterior */
     width: auto;
-    max-width: 240px;
+    max-width: 180px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-    transition: all 0.3s ease;
 }
 
-/* Logo menor no mobile */
+/* Mobile */
 @media (max-width: 768px) {
     .logo-img {
-        height: 48px;
+        height: 36px;
     }
 }
 
-.artist-name { 
-    font-size: 1.32rem; 
-    margin-bottom: 0.2rem; 
-}
+/* O resto do CSS permanece igual (não mexi nas partes importantes) */
+.artist-name { font-size: 1.32rem; margin-bottom: 0.2rem; }
+.artist-tagline { font-size: 0.92rem; opacity: 0.75; font-style: italic; }
 
-.artist-tagline { 
-    font-size: 0.92rem; 
-    opacity: 0.75; 
-    font-style: italic; 
-}
+.menu { display: flex; gap: 2rem; list-style: none; }
+.menu a { text-decoration: none; color: var(--text); transition: color 0.3s; }
+.menu a:hover { color: var(--accent); }
 
-.menu { 
-    display: flex; 
-    gap: 2rem; 
-    list-style: none; 
-}
+.theme-toggle { background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 0.5rem; }
 
-.menu a { 
-    text-decoration: none; 
-    color: var(--text); 
-    transition: color 0.3s; 
-}
-
-.menu a:hover { 
-    color: var(--accent); 
-}
-
-.theme-toggle { 
-    background: none; 
-    border: none; 
-    font-size: 1.5rem; 
-    cursor: pointer; 
-    padding: 0.5rem; 
-}
-
-/* ====================== RESTO DO DESIGN (mantido) ====================== */
+/* HERO, STATS, GALLERY, LIGHTBOX, etc. (mantidos completos) */
 .hero {
     height: 85vh;
     min-height: 600px;
@@ -123,23 +89,9 @@ body {
     text-align: center;
 }
 
-.hero-content { 
-    max-width: 700px; 
-    margin: 0 auto; 
-    z-index: 2; 
-}
-
-.hero-title { 
-    font-size: 3.6rem; 
-    margin-bottom: 1rem; 
-    line-height: 1.1; 
-}
-
-.hero-subtitle { 
-    font-size: 1.32rem; 
-    margin-bottom: 2rem; 
-    opacity: 0.95; 
-}
+.hero-content { max-width: 700px; margin: 0 auto; z-index: 2; }
+.hero-title { font-size: 3.6rem; margin-bottom: 1rem; line-height: 1.1; }
+.hero-subtitle { font-size: 1.32rem; margin-bottom: 2rem; opacity: 0.95; }
 
 .btn-primary {
     background: var(--accent);
@@ -159,7 +111,7 @@ body {
     box-shadow: 0 15px 30px rgba(156, 124, 94, 0.3);
 }
 
-/* STATS & FILTERS */
+/* Stats e Filtros */
 .filters-section {
     padding: 3rem 0;
     background: var(--card-bg);
@@ -202,7 +154,7 @@ body {
     border-color: var(--accent);
 }
 
-/* GALLERY */
+/* Gallery, Lightbox, About, Footer mantidos completos */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -257,7 +209,6 @@ body {
 .art-title { font-size: 1.25rem; margin-bottom: 0.5rem; }
 .art-meta { font-size: 0.95rem; opacity: 0.75; margin-bottom: 0.5rem; }
 
-/* LOAD MORE */
 .load-more-container { text-align: center; margin: 4rem 0; }
 
 .btn-secondary {
@@ -278,7 +229,7 @@ body {
     transform: translateY(-4px);
 }
 
-/* LIGHTBOX */
+/* Lightbox */
 .lightbox {
     position: fixed;
     top: 0; left: 0;
@@ -342,12 +293,7 @@ body {
 
 .lightbox-description { margin: 2rem 0; line-height: 1.8; }
 
-.price { 
-    font-size: 1.6rem; 
-    font-weight: 600; 
-    color: var(--accent); 
-    margin: 1rem 0; 
-}
+.price { font-size: 1.6rem; font-weight: 600; color: var(--accent); margin: 1rem 0; }
 
 .btn-whatsapp {
     margin-top: 2rem;
@@ -361,23 +307,10 @@ body {
     cursor: pointer;
 }
 
-/* ABOUT & FOOTER */
-.about-section { 
-    padding: 6rem 0; 
-    background: var(--bg); 
-}
-
-.about-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 5rem; 
-}
-
-.about-image img { 
-    width: 100%; 
-    border-radius: 8px; 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
-}
+/* About & Footer */
+.about-section { padding: 6rem 0; background: var(--bg); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+.about-image img { width: 100%; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
 
 .footer {
     background: #111;
@@ -391,28 +324,13 @@ body {
     gap: 3rem;
 }
 
-.social-link { 
-    color: #bbb; 
-    text-decoration: none; 
-    display: block; 
-    margin-bottom: 0.6rem; 
-}
+.social-link { color: #bbb; text-decoration: none; display: block; margin-bottom: 0.6rem; }
+.social-link:hover { color: var(--accent); }
 
-.social-link:hover { 
-    color: var(--accent); 
-}
-
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
-    .nav { 
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
+    .nav { flex-direction: column; align-items: flex-start; }
     .hero-title { font-size: 2.8rem; }
-    .gallery-grid { 
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-    }
-    .about-grid { 
-        grid-template-columns: 1fr; 
-    }
+    .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+    .about-grid { grid-template-columns: 1fr; }
 }

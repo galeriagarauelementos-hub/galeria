@@ -39,8 +39,134 @@
         </nav>
     </header>
 
-    <!-- O RESTO DO ARQUIVO CONTINUA IGUAL (HERO, GALLERY, ABOUT, FOOTER, LIGHTBOX) -->
-    <!-- ... (o resto do código que você já tem) ... -->
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Transpiração, Inspiração e Matéria</h2>
+            <p class="hero-subtitle">Criando com o que sobra, com o que ninguém quer, transformando resto em arte.</p>
+            <a href="#galeria" class="btn-primary">Explorar Obras</a>
+        </div>
+    </section>
+
+    <!-- STATS & FILTERS -->
+    <section class="filters-section" id="galeria">
+        <div class="container">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-obras">0</span>
+                    <span class="stat-label">Total de Obras</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="disponiveis">0</span>
+                    <span class="stat-label">Disponíveis</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="vendidas">0</span>
+                    <span class="stat-label">Vendidas</span>
+                </div>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="todos">Todas</button>
+                <button class="filter-btn" data-filter="disponivel">Disponíveis</button>
+                <button class="filter-btn" data-filter="vendida">Vendidas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <main class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Populated by JS -->
+            </div>
+            
+            <div class="load-more-container">
+                <button id="load-more" class="btn-secondary">Carregar Mais Obras</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="sobre">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://picsum.photos/id/1015/800/1000" alt="Douglas Garcia Araujo" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h2>Sobre o Artista</h2>
+                <p>Douglas Garcia Araujo "Garau" nasceu em 1977 em Paranaíba-MS. Sua prática artística explora a interseção entre memória, paisagem e identidade através de suas mãos marcadas pela rusticidade da madeira, tintas acessíveis e pigmentos variados.</p>
+                <p>Lhe dando a liberdade e exclusividade de criar o novo, explorar o que ninguém explora. Das dificuldades nascem peças quase impossíveis. Ele transforma o que a maioria descarta — restos de madeira, guarda-roupas velhos e materiais que cumpriram seu papel — em obras únicas, dando a eles uma segunda chance de existência.</p>
+                <p>Seu acervo é limitado, pois a maioria de suas obras são encomendas. Cada peça é uma investigação poética sobre o efêmero e o eterno.</p>
+                <div class="about-stats">
+                    <div>Obras únicas e encomendas</div>
+                    <div>Material reutilizado com alma</div>
+                </div>
+                <a href="#contato" class="btn-primary">Falar com o Artista</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.png" alt="Garau Elementos" class="logo-image">
+                        <span class="logo-text">GARAU ELEMENTOS</span>
+                    </div>
+                    <p>O que deixou de ser renasce para a eternidade.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <a href="https://wa.me/5564993113063" target="_blank" class="social-link">WhatsApp</a>
+                    <a href="mailto:garauelementos@gmail.com" class="social-link">E-mail</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Redes Sociais</h3>
+                    <a href="https://instagram.com" target="_blank" class="social-link">@garauelementos</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Garau Elementos. Todos os direitos reservados.</p>
+                <p class="made-with">Feito com o que sobra e muita paixão</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">✕</button>
+            
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="">
+            </div>
+            
+            <div class="lightbox-info">
+                <h2 id="lightbox-title"></h2>
+                <div class="art-meta">
+                    <p><strong>Técnica:</strong> <span id="lightbox-tecnica"></span></p>
+                    <p><strong>Dimensões:</strong> <span id="lightbox-dimensoes"></span></p>
+                    <p><strong>Ano:</strong> <span id="lightbox-ano"></span></p>
+                </div>
+                <p id="lightbox-descricao" class="lightbox-description"></p>
+                
+                <div class="lightbox-price-status">
+                    <div id="lightbox-preco" class="price"></div>
+                    <div id="lightbox-status" class="status-badge"></div>
+                </div>
+                
+                <button id="lightbox-whatsapp" class="btn-whatsapp">
+                    Entrar em Contato via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
